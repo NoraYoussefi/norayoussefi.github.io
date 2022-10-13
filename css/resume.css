@@ -65,3 +65,68 @@ dt{
     font-weight: 800;     
     
 }
+
+
+
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+   /*  visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! 
+    position: absolute;
+    z-index: 1;*/
+
+
+    display: none;
+    background: #C8C8C8;
+    margin-left: 28px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+  
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+   
+    display: block;
+
+  }
+
+
+
+
+
+
+  
+.couponcode:hover .coupontooltip {
+    display: block;
+}
+
+.coupontooltip {
+    display: none;
+    background: #C8C8C8;
+    margin-left: 28px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.couponcode {
+    margin:10px;
+}

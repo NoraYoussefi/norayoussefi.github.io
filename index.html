@@ -48,26 +48,33 @@
         <div>
              
                 <h3>Stage d'application</h3>
+              
                     <article>
-                        <h4>développeuse et responsable du projet</h4>
-
-                        <p>Brossmedia - Larache,Morocco
-                            juin. 2021 - sept. 2021</p>
-                        <p>J’étais responsable de la réalisation d’une application web pour la gestion d'un studio musical (BrossWaves) en utilisant Laravel, MySQL, JWT</p>
+                        <h4 >développeuse et responsable du projet<button onclick="alterner('stage')">+</button></h4>
+                        <div id="stage"  style="display:none;">
+                            <p>Brossmedia - Larache,Morocco
+                                juin. 2021 - sept. 2021</p>
+                            <p>J’étais responsable de la réalisation d’une application web pour la gestion d'un studio musical (BrossWaves) en utilisant Laravel, MySQL, JWT</p>    
+                        </div>
+                       
                     </article>
                 <h3>Experiences professionnelles</h3>
                     <article>
-                        <h4>Gestion Immobilière</h4> 
+                        <h4>Gestion Immobilière<button onclick="alterner('imo')">+</button></h4> 
+                        <div id="imo" style="display:none;">
                             <p>nov. 2021 - janv. 2022</p>
                             <p>Spring Boot – Angular – Web3.js – Solidity - MongoDB
                                 Application web décentralisée pour la gestion immobilière à travers des smart contrats basée sur la technologie BlockChain et L'architecture micro-services.</p>
-                    </article>
+                        </div>
+                     </article>
 
                     <article>
-                        <h4>Gestion Département </h4> 
+                        <h4>Gestion Département <button onclick="alterner('depart')">+</button></h4> 
+                        <div id="depart" style="display:none;">
                             <p>mars 2021 - juin 2021</p>
                             <p>Laravel – VueJS – Rest API – JWT – MySQL 
                                 Application web d’architecture client-serveur pour une gestion complète d’un département universitaire</p>
+                        </div>
                     </article>
         </div>
        
@@ -162,10 +169,26 @@
    <section>
         <h3>Langues</h3>
         <ul>
-            <li>Arabe</li>
-            <li>Francais</li>
-            <li>Anglais</li>
-            <li>Turque</li>
+            <li>
+                <div class="couponcode">Arabe
+                <span class="coupontooltip">langues maternel</span>
+                </div>
+            </li>
+            <li>
+                <div class="couponcode">Francais
+                <span class="coupontooltip">niveau b2</span>
+                </div>
+            </li>   
+            <li>
+                <div class="couponcode">Anglais
+                <span class="coupontooltip">niveau b2</span>
+                </div>
+            </li>
+            <li>
+                <div class="couponcode">Turque
+                <span class="coupontooltip">bon niveau</span>
+                </div>
+            </li>
         </ul>
    </section>
    
@@ -200,5 +223,7 @@
    </footer>
 </div>
     
+
+<script src="./js/resume.js"></script>
 </body>
 </html>
