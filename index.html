@@ -36,6 +36,14 @@
             
         </div>
     </header>
+
+    <ul>
+        <li>30:2006</li>
+        <li>80</li>
+        <li>120</li>
+        <li>20</li>
+        <li>28</li>
+        </ul>
     <section>
         <div>
             <h3> A propos de moi</h3>
@@ -141,13 +149,12 @@
         <dl>
             <dt>Langages et Frameworks :</dt>
             <dd>
-                <span itemprop="itemListElement">JAVA/JEE</span>,
-                <span itemprop="itemListElement">SpringBoot</span>,
-                <span itemprop="itemListElement">Python</span>,
-                <span itemprop="itemListElement">Django</span>,
-                <span itemprop="itemListElement">Angular</span>,
-                <span itemprop="itemListElement">PHP</span>,
-                <span itemprop="itemListElement">Laravel</span>,
+                <span class="rating" rating="4" itemprop="itemListElement">JAVA/JEE</span><br>
+                <span class="rating" rating="5" itemprop="itemListElement">SpringBoot</span><br>
+                <span class="rating" rating="5" itemprop="itemListElement">Python           </span><br>
+                <span class="rating" rating="3" itemprop="itemListElement">Django           </span><br>
+                <span class="rating" rating="4" itemprop="itemListElement">Angular          </span><br>
+                <span class="rating" rating="4" itemprop="itemListElement">PHP/Laravel</span>,
                 <span itemprop="itemListElement">Bootstrap</span>,
                 <span itemprop="itemListElement">TailwindCSS</span>,
                 <span itemprop="itemListElement">C</span>,
@@ -155,15 +162,19 @@
             </dd>
             <dt>SGBD :</dt>
             <dd>
-                <span itemprop="itemListElement">MySQL</span>,
-                <span itemprop="itemListElement">MongoDB</span>,
-                <span itemprop="itemListElement">PostgreSQL </span>
+                <span class="rating" rating="5" itemprop="itemListElement">MySQL</span><br>
+                <span class="rating" rating="4" itemprop="itemListElement">MongoDB</span><br>
+                <span class="rating" rating="3" itemprop="itemListElement">PostgreSQL </span>
             </dd>
             <dt>Langage de modélisation:</dt>
-            <dd itemprop="itemListElement">UML </dd>
+                <dd class="rating" rating="5"  itemprop="itemListElement">UML </dd>
+                <dd class="rating" rating="5"  itemprop="itemListElement">Merise </dd>
             <dt>Méthodes Agiles: </dt>
-            <dd itemprop="itemListElement">SCRUM </dd>
+                <dd class="rating" rating="4"  itemprop="itemListElement">SCRUM </dd>
         </dl>
+
+        <canvas id="myChart" width="20" height="10"></canvas>
+
     </section>
 
    <section>
@@ -223,7 +234,8 @@
    </footer>
 </div>
     
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>  
 <script src="./js/resume.js"></script>
+
 </body>
 </html>
